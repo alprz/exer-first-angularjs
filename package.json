@@ -1,0 +1,19 @@
+{
+  "name": "angular-sandbox",
+  "dependencies": {
+    "angular": "latest",
+    "gulp": "latest",
+    "browserify": "latest",
+    "gulp-browserify": "latest",
+    "gulp-clean": "latest",
+    "gulp-concat": "latest",
+    "gulp-jshint": "latest",
+    "gulp-util": "latest",
+    "gulp-embedlr": "latest",
+    "gulp-livereload": "latest",
+    "tiny-lr": "latest",
+    "connect-livereload": "latest",
+    "express": "latest",
+    "jshint": "latest"
+  }
+}
