@@ -22,7 +22,7 @@ server.use(liveReload({ port: livereloadPort}));
 server.use(express.static('/dist'));
 server.use('/assets', express.static(path.join(__dirname + '/dist/assets')));
 server.all('/', function(req, res){
-  res.sendfile('index.html', { root: "dist" });
+  res.sendFile('index.html', { root: "dist" });
 })
 
 gulp.task('dev', function() {

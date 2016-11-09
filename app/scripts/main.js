@@ -1,7 +1,9 @@
 (function(){ 'use strict'; })();
 
 var angular = require('angular');
-var WelcomeController = require('./controllers/welcome-controller');
+var TodoCtrl = require('./controllers/todo-controller');
+var TodoService = require('./services/todo-service');
 
-var app = angular.module('SandboxApp', []);
-app.controller('WelcomeController', ['$scope', WelcomeController]);
+var app = angular.module('todoListApp', []);
+app.controller('TodoCtrl', ['$scope', 'TodoService', TodoCtrl]);
+app.service('TodoService', [TodoService]);

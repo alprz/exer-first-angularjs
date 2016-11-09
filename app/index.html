@@ -1,8 +1,14 @@
-<html lang="en" ng-app="SandboxApp">
-  <head><title>Angular Sandbox App</title></head>
-  <body ng-controller="WelcomeController">
-    <h1>Angular Sandbox App</h1>
-    <p>{{testMessage}}</p>
-    <script src="/assets/js/bundle.js"></script>
+<html lang="en">
+  <head><title>Yet Another Angular Todo App</title></head>
+  <body>
+    <div ng-app="todoListApp">
+      <div ng-controller="TodoCtrl">
+        <h1>Yet Another Angular Todo App</h1>
+        <div ng-repeat="todo in todoList">
+          <div ng-bind="todo.summary"></div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="/assets/js/bundle.js"></script>
 </html>
